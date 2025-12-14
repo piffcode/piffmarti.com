@@ -1,24 +1,30 @@
-{/* Content */}
-        <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-          <h1 className="font-['Archivo_Black',_sans-serif] text-[#FF0000] text-6xl md:text-8xl mb-6">
-            <nav className="space-y-3">
-              <Link to={createPageUrl("Press")} className="block text-red-400 hover:text-white transition">
-                WHO AM I?
-              </Link>
-              <a 
-                href="https://hypeddit.com/piffmartimerlakura/bounce" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="block text-red-400 hover:text-white transition"
-              >
-                MUSIC
-              </a>                    
-              <Link to={createPageUrl("Contact")} className="block text-red-400 hover:text-white transition">
-                CONTACT
-              </Link>
-            </nav>
-          </h1>
-        </div>
-      </section>
-    </div>
-  );
+<div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+  <h1 className="font-['Archivo_Black',_sans-serif] text-[#FF0000] text-6xl md:text-8xl mb-6">
+    MENU
+  </h1>
+
+  <nav className="space-y-3">
+    <Link
+      to={createPageUrl("Press")}
+      className="block text-red-400 hover:text-white transition"
+    >
+      WHO AM I?
+    </Link>
+
+    <a
+      href="https://hypeddit.com/piffmartimerlakura/bounce"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block text-red-400 hover:text-white transition"
+    >
+      MUSIC
+    </a>
+
+    <Link
+      to={createPageUrl("Contact")}
+      className="block text-red-400 hover:text-white transition"
+    >
+      CONTACT
+    </Link>
+  </nav>
+</div>
