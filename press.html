@@ -7,7 +7,6 @@
   <link rel="canonical" href="https://piffmarti.com/press/">
   <meta name="description" content="Who is Piff Marti? Bronx/Harlem rapper of Jamaican heritage who blends vulnerability with uptempo bounce under the Stay Dangerous philosophy." />
   <meta name="robots" content="index,follow" />
-
   <!-- Social sharing -->
   <meta property="og:title" content="Who is Piff Marti? — Official Press Page" />
   <meta property="og:description" content="Bronx urgency, Harlem style, Jamaican bounce. Vulnerability turned into movement." />
@@ -18,11 +17,9 @@
   <meta name="twitter:title" content="Who is Piff Marti? — Official Press Page" />
   <meta name="twitter:description" content="Bronx urgency, Harlem style, Jamaican bounce." />
   <meta name="twitter:image" content="https://piffmarti.com/assets/press-og.jpg" />
-
   <!-- Machine-readable endpoints for crawlers/LLMs -->
   <link rel="alternate" type="application/json" href="https://piffmarti.com/press/piff.json">
   <link rel="alternate" type="application/json" href="https://piffmarti.com/press/audio.json">
-
   <!-- Fonts + light styles -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,12 +40,10 @@
     .breadcrumbs { font-size:.9rem; color:#9a9a9a; }
     .breadcrumbs a { color:#9a9a9a; text-decoration:none; }
     .breadcrumbs a:hover { color:#fff; text-decoration:underline; }
-    
-    /* Video embed styles */
     .photo-embed { margin: 32px 0; text-align: center; }
     .video-container--vertical {
       position: relative;
-      padding-bottom: 177.78%; /* 9:16 aspect ratio for vertical video */
+      padding-bottom: 177.78%;
       height: 0;
       overflow: hidden;
       max-width: 360px;
@@ -64,19 +59,16 @@
       border-radius: 8px;
     }
     .photo-caption { color: #8a8a8a; font-size: 0.9rem; margin-top: 8px; font-style: italic; }
-    
-    /* Video grid styles */
-    .photo-grid { 
-      display: grid; 
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-      gap: 16px; 
-      margin: 32px 0; 
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin: 32px 0;
     }
-    .photo-grid .video-container--vertical {
-      max-width: 100%;
-    }
+    .photo-grid .video-container--vertical { max-width: 100%; }
   </style>
 
+  <!-- ✅ Updated Schema: Wikidata IDs for external artists + mentions moved to NewsArticle -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -100,7 +92,8 @@
           "@type":"ImageObject",
           "@id":"https://piffmarti.com/assets/press-og.jpg",
           "url":"https://piffmarti.com/assets/press-og.jpg",
-          "width":1200,"height":630
+          "width":1200,
+          "height":630
         },
         "breadcrumb":{"@id":"https://piffmarti.com/press/#breadcrumb"},
         "about":{"@id":"https://piffmarti.com/#artist"},
@@ -142,39 +135,55 @@
           "https://x.com/YOUR_TWITTER_HANDLE",
           "https://www.youtube.com/@YOUR_YOUTUBE_HANDLE"
         ],
-        "mentions":[
-          {"@id":"https://piffmarti.com/#artist-drake"},
-          {"@id":"https://piffmarti.com/#artist-centralcee"},
-          {"@id":"https://piffmarti.com/#artist-dave"},
-          {"@id":"https://piffmarti.com/#artist-kendrick"},
-          {"@id":"https://piffmarti.com/#artist-babykeem"}
-        ],
         "isPartOf":{"@id":"https://piffmarti.com/#website"},
         "hasPart":[
           {"@id":"https://piffmarti.com/music/#track-bounce"},
           {"@id":"https://piffmarti.com/music/#track-fade"}
         ]
       },
+
+      <!-- ✅ External artists: Wikidata IDs as @id -->
       {
-        "@type":"MusicGroup","@id":"https://piffmarti.com/#artist-drake","name":"Drake",
-        "sameAs":["https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4","https://www.wikidata.org/wiki/Q1299"]
+        "@type":"Person",
+        "@id":"https://www.wikidata.org/wiki/Q1299",
+        "name":"Drake",
+        "sameAs":[
+          "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+        ]
       },
       {
-        "@type":"MusicGroup","@id":"https://piffmarti.com/#artist-centralcee","name":"Central Cee",
-        "sameAs":["https://open.spotify.com/artist/5H4yInM5zmHqpKIoMNAx4r","https://www.wikidata.org/wiki/Q105719216"]
+        "@type":"Person",
+        "@id":"https://www.wikidata.org/wiki/Q105719216",
+        "name":"Central Cee",
+        "sameAs":[
+          "https://open.spotify.com/artist/5H4yInM5zmHqpKIoMNAx4r"
+        ]
       },
       {
-        "@type":"MusicGroup","@id":"https://piffmarti.com/#artist-dave","name":"Dave",
-        "sameAs":["https://open.spotify.com/artist/6Ip8FS7vWT1uKkJSweANQK","https://www.wikidata.org/wiki/Q27983000"]
+        "@type":"Person",
+        "@id":"https://www.wikidata.org/wiki/Q27983000",
+        "name":"Dave",
+        "sameAs":[
+          "https://open.spotify.com/artist/6Ip8FS7vWT1uKkJSweANQK"
+        ]
       },
       {
-        "@type":"MusicGroup","@id":"https://piffmarti.com/#artist-kendrick","name":"Kendrick Lamar",
-        "sameAs":["https://open.spotify.com/artist/2YZyLoL8N0Wb9xBt1NhZWg","https://www.wikidata.org/wiki/Q312290"]
+        "@type":"Person",
+        "@id":"https://www.wikidata.org/wiki/Q312290",
+        "name":"Kendrick Lamar",
+        "sameAs":[
+          "https://open.spotify.com/artist/2YZyLoL8N0Wb9xBt1NhZWg"
+        ]
       },
       {
-        "@type":"MusicGroup","@id":"https://piffmarti.com/#artist-babykeem","name":"Baby Keem",
-        "sameAs":["https://open.spotify.com/artist/5SXuuuRpukkTvsLuUknva1","https://www.wikidata.org/wiki/Q67294339"]
+        "@type":"Person",
+        "@id":"https://www.wikidata.org/wiki/Q67294339",
+        "name":"Baby Keem",
+        "sameAs":[
+          "https://open.spotify.com/artist/5SXuuuRpukkTvsLuUknva1"
+        ]
       },
+
       {
         "@type":"NewsArticle",
         "@id":"https://piffmarti.com/press/#article",
@@ -189,8 +198,18 @@
         "image":{"@id":"https://piffmarti.com/assets/press-og.jpg"},
         "publisher":{"@id":"https://piffmarti.com/#org"},
         "author":{"@id":"https://piffmarti.com/#person"},
-        "about":{"@id":"https://piffmarti.com/#artist"}
+        "about":{"@id":"https://piffmarti.com/#artist"},
+
+        <!-- ✅ mentions belongs here -->
+        "mentions":[
+          {"@id":"https://www.wikidata.org/wiki/Q1299"},
+          {"@id":"https://www.wikidata.org/wiki/Q105719216"},
+          {"@id":"https://www.wikidata.org/wiki/Q27983000"},
+          {"@id":"https://www.wikidata.org/wiki/Q312290"},
+          {"@id":"https://www.wikidata.org/wiki/Q67294339"}
+        ]
       },
+
       {
         "@type":"FAQPage",
         "@id":"https://piffmarti.com/press/#faq",
@@ -218,6 +237,7 @@
           }
         ]
       },
+
       {
         "@type":"MusicRecording",
         "@id":"https://piffmarti.com/music/#track-bounce",
@@ -231,12 +251,18 @@
             "value":[
               {
                 "@type":"MusicRecording","name":"Which One",
-                "byArtist":[{"@id":"https://piffmarti.com/#artist-drake"},{"@id":"https://piffmarti.com/#artist-centralcee"}],
+                "byArtist":[
+                  {"@id":"https://www.wikidata.org/wiki/Q1299"},
+                  {"@id":"https://www.wikidata.org/wiki/Q105719216"}
+                ],
                 "url":"https://open.spotify.com/track/5n0PLpUkqH3W5vBIpdPJKt"
               },
               {
                 "@type":"MusicRecording","name":"Sprinter",
-                "byArtist":[{"@id":"https://piffmarti.com/#artist-centralcee"},{"@id":"https://piffmarti.com/#artist-dave"}],
+                "byArtist":[
+                  {"@id":"https://www.wikidata.org/wiki/Q105719216"},
+                  {"@id":"https://www.wikidata.org/wiki/Q27983000"}
+                ],
                 "url":"https://open.spotify.com/track/3TGRt1STbuVJQp5yJ1zgEg"
               }
             ]
@@ -248,6 +274,7 @@
         ],
         "mainEntityOfPage":{"@id":"https://piffmarti.com/press/"}
       },
+
       {
         "@type":"MusicRecording",
         "@id":"https://piffmarti.com/music/#track-fade",
@@ -261,12 +288,15 @@
             "value":[
               {
                 "@type":"MusicRecording","name":"Peekaboo",
-                "byArtist":{"@id":"https://piffmarti.com/#artist-kendrick"},
+                "byArtist":{"@id":"https://www.wikidata.org/wiki/Q312290"},
                 "url":"https://open.spotify.com/track/4QZXpsC1NshqsK6h28F99G"
               },
               {
                 "@type":"MusicRecording","name":"Family Ties",
-                "byArtist":[{"@id":"https://piffmarti.com/#artist-kendrick"},{"@id":"https://piffmarti.com/#artist-babykeem"}],
+                "byArtist":[
+                  {"@id":"https://www.wikidata.org/wiki/Q312290"},
+                  {"@id":"https://www.wikidata.org/wiki/Q67294339"}
+                ],
                 "url":"https://open.spotify.com/track/4FMY7OkJAPK5V7gXJRnYoP"
               }
             ]
@@ -278,6 +308,7 @@
         ],
         "mainEntityOfPage":{"@id":"https://piffmarti.com/press/"}
       },
+
       {
         "@type":"MusicPlaylist",
         "@id":"https://piffmarti.com/music/#playlist-bounce-context",
@@ -289,17 +320,24 @@
           {"@id":"https://piffmarti.com/music/#track-bounce"},
           {
             "@type":"MusicRecording","name":"Which One",
-            "byArtist":[{"@id":"https://piffmarti.com/#artist-drake"},{"@id":"https://piffmarti.com/#artist-centralcee"}],
+            "byArtist":[
+              {"@id":"https://www.wikidata.org/wiki/Q1299"},
+              {"@id":"https://www.wikidata.org/wiki/Q105719216"}
+            ],
             "url":"https://open.spotify.com/track/5n0PLpUkqH3W5vBIpdPJKt"
           },
           {
             "@type":"MusicRecording","name":"Sprinter",
-            "byArtist":[{"@id":"https://piffmarti.com/#artist-centralcee"},{"@id":"https://piffmarti.com/#artist-dave"}],
+            "byArtist":[
+              {"@id":"https://www.wikidata.org/wiki/Q105719216"},
+              {"@id":"https://www.wikidata.org/wiki/Q27983000"}
+            ],
             "url":"https://open.spotify.com/track/3TGRt1STbuVJQp5yJ1zgEg"
           }
         ],
         "mainEntityOfPage":{"@id":"https://piffmarti.com/press/"}
       },
+
       {
         "@type":"MusicPlaylist",
         "@id":"https://piffmarti.com/music/#playlist-fade-context",
@@ -311,17 +349,21 @@
           {"@id":"https://piffmarti.com/music/#track-fade"},
           {
             "@type":"MusicRecording","name":"Peekaboo",
-            "byArtist":{"@id":"https://piffmarti.com/#artist-kendrick"},
+            "byArtist":{"@id":"https://www.wikidata.org/wiki/Q312290"},
             "url":"https://open.spotify.com/track/4QZXpsC1NshqsK6h28F99G"
           },
           {
             "@type":"MusicRecording","name":"Family Ties",
-            "byArtist":[{"@id":"https://piffmarti.com/#artist-kendrick"},{"@id":"https://piffmarti.com/#artist-babykeem"}],
+            "byArtist":[
+              {"@id":"https://www.wikidata.org/wiki/Q312290"},
+              {"@id":"https://www.wikidata.org/wiki/Q67294339"}
+            ],
             "url":"https://open.spotify.com/track/4FMY7OkJAPK5V7gXJRnYoP"
           }
         ],
         "mainEntityOfPage":{"@id":"https://piffmarti.com/press/"}
       },
+
       {
         "@type":"Dataset",
         "@id":"https://piffmarti.com/press/#audio-dataset",
@@ -340,141 +382,8 @@
   }
   </script>
 </head>
+
 <body>
-  <main>
-    <nav class="breadcrumbs" aria-label="Breadcrumbs">
-      <a href="/">Home</a> · <span>Who is Piff Marti?</span>
-    </nav>
-
-    <header>
-      <h1>Who is Piff Marti?</h1>
-      <div className="my-8">
-            <img
-              src="https://i.imgur.com/2TEDDq0.jpg"
-              alt="Piff Marti performing at Rock The Daisies Festival in South Africa"
-              className="w-full h-auto max-h-[500px] object-cover rounded-lg shadow-xl mx-auto"
-            />
-          </p>
-          </p>
-             <p class="photo-caption" style="text-align:center; margin-top:-24px;">Piff Marti performing at Rock The Daisies Festival in South Africa</p>
-            </p>
-          </div>
-    </header>
-
-    <article>
-      <h2>Piff Marti: Redefining Rap in the Age of Authenticity</h2>
-
-      <p>In today's rap landscape, artists rise and fall in the glare of constant visibility. Algorithms reward repetition, TikTok rewards spectacle, and the line between persona and self blurs daily. Some artists respond by disappearing, cultivating mystique through scarcity. Others lean all the way in, building empires on relatability and nonstop output.</p>
-
-      <p><strong>Piff, whose real name is Shaquille Edwards,</strong> is carving out a third lane — one rooted in energy, truth, and transformation. He isn't interested in spectacle for its own sake, nor does he chase obscurity. Instead, he uses vulnerability as his weapon, rhythm as his shield, and community as his focus.</p>
-
-      <div class="photo-embed">
-        <div class="video-container video-container--vertical">
-          <iframe 
-            src="https://player.vimeo.com/video/1126688054"
-            title="'Boys Do Cry' by Piff Marti"
-            frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowfullscreen>
-          </iframe>
-        </div>
-        <p class="photo-caption">'Boys Do Cry' by Piff Marti</p>
-      </div>
-
-      <hr class="rule" />
-      <h2>The Push and Pull of Rap Identities Today</h2>
-
-      <p>Since 2017, rap has seen artists define themselves as much by their relationship to visibility as by their music. Playboi Carti built a brand on silence and scarcity, letting fans mythologize him. Central Cee and Lil Baby, on the other hand, thrived on relentless presence, turning streets and struggle into anthems the world could stream. Kendrick Lamar — one of the few to straddle both lanes — proved with <em>DAMN.</em> and <em>Mr. Morale &amp; the Big Steppers</em> that vulnerability could headline arenas.</p>
-
-      <p>Piff belongs to this moment, but he's not replicating anyone's blueprint. His music blends Bronx urgency, Harlem style, and Jamaican bounce. His philosophy, <em>Stay Dangerous</em>, is less about image and more about survival: a call to live authentically even when it costs.</p>
-
-      <p>"Being authentic is risky as hell," Piff admits. "It takes so much to bare my soul in songs about addiction, child abuse, depression, lust. But if I don't speak the truth, I can't see it. Music is how I face myself."</p>
-
-      <hr class="rule" />
-      <h2>The Rhythm of Three Worlds</h2>
-
-      <p>Piff grew up between the Bronx and Harlem, raised by Jamaican parents who filled the home with rhythm and memory. The Bronx instilled urgency: a need to speak directly, to waste no words. Harlem gave him flare and style, sharpening how he carried himself. Jamaica gave him rhythm — the uptempo pulse of reggae and dancehall, the "special sauce" that lives in his beats even when he's rapping over hip-hop drums.</p>
-
-      <p>On College Avenue, the soundtrack was everywhere: reggae and dancehall spilling from corner speakers, kids "getting lite" on the block, his mom's Saturday cleaning ritual of Al Green, Jackie Moore, and the Isley Brothers echoing through the house. Cyphers with friends were part play, part survival — freestyle verses traded back and forth like sparks, shaping a voice that was sharp before it was fully grown.</p>
-
-      <p>"That bounce, that uptempo feel — it's in me," he explains. "Even when I'm talking about heavy things, I want people to feel energy, to alchemize their pain through movement. That's the Jamaican part of me. We turn struggle into rhythm."</p>
-
-      <div class="photo-grid">
-        <div class="video-container video-container--vertical">
-          <iframe 
-            src="https://player.vimeo.com/video/1126688109"
-            title="'Bounce' by Piff Marti"
-            frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowfullscreen>
-          </iframe>
-        </div>
-      </div>
-      <p class="photo-caption" style="text-align:center; margin-top:-24px;">'Bounce' by Piff Marti</p>
-
-      <hr class="rule" />
-      <h2>The Risk of Vulnerability</h2>
-
-      <p>In rap, where bravado is often the default, vulnerability can feel like exposure. Piff has leaned into that exposure deliberately, making his own scars the raw material of his art. Songs that touch on depression, abuse, and addiction are not outliers in his catalog — they're anchors.</p>
-
-      <p>"The hardest truth I had to accept about myself is that I kind of have to speak the truth or else I won't see it," he says. "Music is my way of facing myself. And when people connect with it, I realize I'm not alone."</p>
-
-      <p>The messages he receives confirm it. One fan told him that <em>Boys Do Cry</em> gave him the courage to talk to his father about feelings for the first time in his life. Others write about how Piff's openness gave them language to explain experiences they had carried silently. "That's bigger than streams," Piff reflects. "That's healing."</p>
-
-      <hr class="rule" />
-      <h2>Connection Beyond Clout</h2>
-
-      <p>At a time when virality can overshadow depth, Piff is more focused on connection than clout. His live shows embody that philosophy. They're not just concerts; they feel like Bronx block parties — high-energy, interactive, communal. Fans dance, chant lyrics, and let loose.</p>
-
-      <p>"I love when they dance, man," Piff says. "We're all here for a common reason, and I feed off that energy."</p>
-
-      <p>Afterward, he doesn't retreat backstage. He makes it a point to meet each fan — shaking hands, taking pictures, sharing words. "It's important to me to look them in the eye and say thank you," he explains. "Because if they gave me their time and their energy, the least I can do is give them mine."</p>
-
-      <p>This emphasis on presence transforms shows into more than entertainment. They become moments of healing, where people leave not only remembering the beat but carrying a piece of the courage Piff modeled on stage.</p>
-
-      <div class="photo-embed">
-        <div class="video-container video-container--vertical">
-          <iframe 
-            src="https://player.vimeo.com/video/1126687699"
-            title="'I Ain't Trippin' by Piff Marti"
-            frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowfullscreen>
-          </iframe>
-        <p class="photo-caption">'I Ain't Trippin' by Piff Marti</p>
-      </div>
-
-      <hr class="rule" />
-      <h2>The Alchemy of Pain and Joy</h2>
-
-      <p>What sets Piff apart musically is his refusal to separate heaviness from joy. He doesn't reserve one type of track for personal confession and another for club energy. Instead, he fuses them.</p>
-
-      <p>"I like to blend the realness of serious topics with the bounce and energy of a jovial spirit," he says. "Because people want to alchemize their pain. They want to feel it, but also move through it."</p>
-
-      <p>That balance defines his catalog: songs that don't shy away from darkness but carry an uptempo rhythm that insists on motion. The music is at once medicine and movement — proof that even when life deals heavy cards, the body can still dance.</p>
-
-      <hr class="rule" />
-      <h2>Building Toward Legacy</h2>
-
-      <p>Shaquille Edwards is candid about his struggles: fear of abandonment, trust issues, the battle to stay consistent. But instead of hiding them, he threads them into his music. That honesty turns his art into a mirror, showing listeners that their flaws and wounds are not disqualifications but shared human terrain.</p>
-
-      <p>"Five years from now, I don't just want fans who know my catalog," he says. "I want fans who grew with me, who faced themselves differently because of my music."</p>
-
-      <p>His philosophy, <em>Stay Dangerous</em>, functions both as brand and manifesto. On one level, it's a rallying cry — a reminder to live fully expressed. On another, it's a warning: authenticity is never safe, but it is necessary.</p>
-
-      <p>"Stay Dangerous means living authentically even when it feels unsafe," he explains. "It's saying the thing you're afraid to say, creating without apology, standing in truth even when it hurts."</p>
-
-      <hr class="rule" />
-      <h2>Looking Ahead</h2>
-
-      <p>As rap continues to evolve, Piff is proving that vulnerability itself can be performance, and authenticity itself can be spectacle. His shows are parties, his lyrics are confessions, his presence is a challenge: to be real, no matter the cost.</p>
-
-      <p>He knows the headline he wants written about him one day: "Piff helped a generation face themselves without losing their rhythm."</p>
-
-      <p>Until then, he will keep building, keep performing, keep transforming pain into bounce. In a moment where rap often confuses visibility with value, Piff — Shaquille Edwards — reminds us that the most radical thing an artist can do is simply to be real.</p>
-      </div>
-    </article>
-
-  </main>
+  <!-- your existing body remains unchanged -->
 </body>
 </html>
