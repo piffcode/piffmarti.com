@@ -1,0 +1,26 @@
+{
+  "general": {
+    "accessibility": {
+      "skip_to_content": "Skip to content"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Your Cart",
+      "empty": "Your cart is empty.",
+      "checkout": "Checkout"
+    }
+  },
+  "product": {
+    "add_to_cart": "Add to cart",
+    "sold_out": "Sold out",
+    "quantity": "Quantity"
+  },
+  "collection": {
+    "title": "Collection"
+  },
+  "footer": {
+    "newsletter": "Stay in the loop",
+    "subscribe": "Subscribe"
+  }
+}

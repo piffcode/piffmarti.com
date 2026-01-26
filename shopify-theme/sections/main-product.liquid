@@ -1,0 +1,33 @@
+<section class="section">
+  <div class="container grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); align-items: start;">
+    <div>
+      {% if product.featured_image %}
+        <img src="{{ product.featured_image | image_url: width: 900 }}" alt="{{ product.featured_image.alt | escape }}">
+      {% endif %}
+    </div>
+    <div>
+      <h1 class="section-title">{{ product.title }}</h1>
+      <p class="price">{{ product.price | money }}</p>
+      <div>{{ product.description }}</div>
+      {% form 'product', product %}
+        <label for="Quantity">{{ 'product.quantity' | t }}</label>
+        <input id="Quantity" type="number" name="quantity" min="1" value="1">
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+        <button class="button" type="submit">
+          {% if product.available %}
+            {{ 'product.add_to_cart' | t }}
+          {% else %}
+            {{ 'product.sold_out' | t }}
+          {% endif %}
+        </button>
+      {% endform %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Main product",
+  "settings": []
+}
+{% endschema %}
