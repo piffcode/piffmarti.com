@@ -1,0 +1,39 @@
+<section class="section">
+  <div class="container">
+    <h1 class="section-title">{{ 'cart.general.title' | t }}</h1>
+    {% if cart.item_count == 0 %}
+      <p>{{ 'cart.general.empty' | t }}</p>
+    {% else %}
+      <form action="{{ routes.cart_url }}" method="post">
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Quantity</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in cart.items %}
+              <tr>
+                <td>{{ item.product.title }}</td>
+                <td>
+                  <input type="number" name="updates[]" value="{{ item.quantity }}" min="0">
+                </td>
+                <td>{{ item.final_line_price | money }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <button class="button" type="submit" name="checkout">{{ 'cart.general.checkout' | t }}</button>
+      </form>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Main cart",
+  "settings": []
+}
+{% endschema %}

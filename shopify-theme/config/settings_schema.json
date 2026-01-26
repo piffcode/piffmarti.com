@@ -1,0 +1,43 @@
+[
+  {
+    "name": "Theme settings",
+    "settings": [
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background color",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text color",
+        "default": "#ff2b2b"
+      },
+      {
+        "type": "color",
+        "id": "accent_color",
+        "label": "Accent color",
+        "default": "#ff4d4d"
+      },
+      {
+        "type": "color",
+        "id": "accent_soft_color",
+        "label": "Accent soft color",
+        "default": "#f9cb28"
+      },
+      {
+        "type": "text",
+        "id": "hero_heading",
+        "label": "Hero heading",
+        "default": "PIFF MARTI"
+      },
+      {
+        "type": "textarea",
+        "id": "hero_subheading",
+        "label": "Hero subheading",
+        "default": "High-energy drops, merch, and visuals inspired by the city glow."
+      }
+    ]
+  }
+]

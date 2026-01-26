@@ -1,0 +1,41 @@
+<section class="hero">
+  <div class="container hero-content">
+    <p class="gradient-text" style="text-transform: uppercase; letter-spacing: 0.3em;">{{ section.settings.kicker }}</p>
+    <h1 class="hero-title gradient-text">{{ settings.hero_heading }}</h1>
+    <p class="hero-subtitle">{{ settings.hero_subheading }}</p>
+    <div>
+      <a class="button" href="{{ section.settings.primary_link }}">{{ section.settings.primary_label }}</a>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hero",
+  "settings": [
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker text",
+      "default": "Merch • Music • Visuals"
+    },
+    {
+      "type": "text",
+      "id": "primary_label",
+      "label": "Primary button label",
+      "default": "Shop the drop"
+    },
+    {
+      "type": "url",
+      "id": "primary_link",
+      "label": "Primary button link",
+      "default": "/collections/all"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero"
+    }
+  ]
+}
+{% endschema %}
